@@ -15,7 +15,8 @@ Example run:
 python3 main.py SST 5 2
 ```
 
-Output:\
+Output:
+
 Soft, Soft, Tough, Soft and Soft.\
 Soft and Soft.
 
