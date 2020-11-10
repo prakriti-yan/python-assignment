@@ -4,7 +4,9 @@ import unittest
 
 class TestOutput(unittest.TestCase):
 	def testValid(self):
+		self.assertEqual("Soft.", str(main.Line("SST", 1)))
 		self.assertEqual("Soft, Soft, Tough, Soft and Soft.", str(main.Line("SST", 5)))
+		self.assertEqual("Soft, Soft, Tough, Soft, Soft, Tough, Soft and Soft.", str(main.Line("SST", 8)))
 		self.assertEqual("Soft, Soft and Tough.", str(main.Line("SST", 3)))
 		self.assertEqual("Soft, Soft, Tough, Soft, Soft and Tough.", str(main.Line("SST", 6)))
 		self.assertEqual("Soft, Soft, Tough, Soft, Tough, Soft, Soft, Tough, Soft and Tough.", str(main.Line("SSTST", 10)))
