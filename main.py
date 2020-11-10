@@ -15,12 +15,10 @@ class Line:
 		if (self.number < 0):
 			return "Positive integers only!"
 		while i < self.number - 2:
-			word = self.__word(i)
-			line += word + ', '
+			line += self.__word(i) + ', '
 			i += 1
-		if i == self.number - 2:
-			word = self.__word(i)
-			line += word + ' and '
+		if i == self.number - 2: 
+			line += self.__word(i) + ' and '
 			i += 1
 		if i == self.number - 1:
 			word = self.__word(i)
@@ -60,7 +58,7 @@ def main(argv):
 
 if __name__ == "__main__":
 	if (len(sys.argv) < 3):
-		print ("Usage: The first argument is a random pattern consisting of characters S and T. For example 'STTTS'.\n"
+		print ("Usage: The first argument is a random pattern consisting only of characters S and T. For example 'STTTS'.\n"
 			"The following arguments are N (N >= 1) number of integers. For example 1 5 8. Each integer is\n"
 			"separated from previous one with a space.")
 	else:
